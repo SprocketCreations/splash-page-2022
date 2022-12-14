@@ -8,6 +8,10 @@
 	--button-hover-color: #3C5233;
 }
 
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
 	margin:0;
 	padding:0;
