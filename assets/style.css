@@ -105,6 +105,11 @@ with the image */
 .contact form input {
 	width: 20em;
 	background-color: var(--hero-background);
+	outline: none;
+}
+.contact form button:hover,
+.contact form input:focus {
+	border-color: rgb(109, 109, 221);
 }
 .contact form button {
 	background-color: var(--banner-color);
