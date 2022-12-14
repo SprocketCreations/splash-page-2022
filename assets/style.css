@@ -1,5 +1,11 @@
-* {
-	/* Font */
+:root {
+	--banner-color: #264027;
+	--banner-border-color: #122912;
+	--white-text: #f4f7ef;
+	--hero-background: #CCDAD1;
+	--contact-outline: #194566;
+	--contact-background: #47669c;
+	--button-hover-color: #3C5233;
 }
 
 body {
@@ -7,92 +13,102 @@ body {
 	padding:0;
 }
 
-a {
-
-}
-
+/* The header and footer are the banners at the
+top and bottom of the screen. They have a number
+of common attributes, and several unique ones  */
 header,
 footer {
-	background-color: green;
+	background-color: var(--banner-color);
 	margin: 0px;
 	padding: 1em;
+	color: var(--white-text);
 }
-
 header {
-	border-bottom: 0.5em solid blue;
+	padding-top: 1.1em;;
+	border-bottom: 0.5em solid var(--banner-border-color);
 }
-
 footer {
-	border-top: 0.5em solid blue;
+	border-top: 0.5em solid var(--banner-border-color);
 	text-align: center;
 }
 
+/* This is for the navigation bar at the top of the screen
+I want it to look like a sequence of buttons that change 
+color when hovered */
 .navigation ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	text-align: right;
 }
-
 .navigation ul li {
 	display: inline;
 }
-
 .navigation ul li a {
 	padding: 0.5em 1em;
 	margin: 0.5em 0.25em;
 	text-decoration: none;
-	color: blue;
+	color: var(--white-text);
 	border-radius: 0.5em;
 	cursor: pointer;
 }
 .navigation ul li a:hover {
-	background-color: coral;
+	background-color: var(--button-hover-color);
 }
 
+/* The hero and contact form section are both centered */
 .hero,
 .contact {
 	text-align: center;
 }
 
+/* Pretty simple, this is just the center block of content
+with the image */
 .hero {
-	background: burlywood;
+	background: var(--hero-background);
 	padding: 0.25em 1em;
 
 }
-
 .hero img {
 	height: 20em;
 }
 
+/* This is where all the form stuff is */
 .contact {
-	background-color: orangered;
+	background-color: var(--contact-background);
 	padding: 1em;
-	border-top: 0.25em solid blue;
+	border-top: 0.25em solid var(--contact-outline);
 }
-
+.contact h2 {
+	color: var(--white-text);
+}
 .contact form {
-	border: 0.25em solid blue;
+	border: 0.25em solid var(--contact-outline);
 	border-radius: 1em;
 	padding: 1em 4em;
 	width: fit-content;
 	margin: 1em auto;
 }
-
+.contact form label {
+	cursor: pointer;
+	color: var(--white-text)
+}
 .contact form button,
 .contact form input {
-	border: 0.25em solid blue;
+	border: 0.25em solid var(--contact-outline);
 	border-radius: 0px;
 }
-
 .contact form input {
 	width: 20em;
-	background-color: green;
+	background-color: var(--hero-background);
 }
-
 .contact form button {
-	background-color: green;
+	background-color: var(--banner-color);
 	padding: 0.5em 2em;
-	
+	color: var(--white-text);
 	margin-top: 1em;
+	cursor: pointer;
+}
+.contact form button:hover{
+	background-color: var(--button-hover-color);
 }
