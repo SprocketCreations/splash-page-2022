@@ -1,3 +1,98 @@
+* {
+	/* Font */
+}
+
 body {
-	background-color: burlywood;
+	margin:0;
+	padding:0;
+}
+
+a {
+
+}
+
+header,
+footer {
+	background-color: green;
+	margin: 0px;
+	padding: 1em;
+}
+
+header {
+	border-bottom: 0.5em solid blue;
+}
+
+footer {
+	border-top: 0.5em solid blue;
+	text-align: center;
+}
+
+.navigation ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+
+.navigation ul li {
+	display: inline;
+}
+
+.navigation ul li a {
+	padding: 0.5em 1em;
+	margin: 0.5em 0.25em;
+	text-decoration: none;
+	color: blue;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+.navigation ul li a:hover {
+	background-color: coral;
+}
+
+.hero,
+.contact {
+	text-align: center;
+}
+
+.hero {
+	background: burlywood;
+	padding: 0.25em 1em;
+
+}
+
+.hero img {
+	height: 20em;
+}
+
+.contact {
+	background-color: orangered;
+	padding: 1em;
+	border-top: 0.25em solid blue;
+}
+
+.contact form {
+	border: 0.25em solid blue;
+	border-radius: 1em;
+	padding: 1em 4em;
+	width: fit-content;
+	margin: 1em auto;
+}
+
+.contact form button,
+.contact form input {
+	border: 0.25em solid blue;
+	border-radius: 0px;
+}
+
+.contact form input {
+	width: 20em;
+	background-color: green;
+}
+
+.contact form button {
+	background-color: green;
+	padding: 0.5em 2em;
+	
+	margin-top: 1em;
 }
